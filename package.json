@@ -16,5 +16,8 @@
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "dependencies": {
+    "hono": "^2.7.1"
   }
 }

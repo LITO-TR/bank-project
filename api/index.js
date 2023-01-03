@@ -7,9 +7,9 @@
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
+import { Hono } from 'hono'
+const app = new Hono()
 
-export default {
-  async fetch (request, env, ctx) {
-    return new Response('Hello Nilton!')
-  }
-}
+app.get('/', (c) => c.text('hola!!'))
+
+export default app
